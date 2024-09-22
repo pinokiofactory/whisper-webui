@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "2.0",
   title: "Whisper-WebUI",
-  description: "",
+  description: "A Web UI for easy subtitle using whisper model.",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
