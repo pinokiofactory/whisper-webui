@@ -29,6 +29,7 @@ module.exports = {
       }
     },
     {
+      when: "{{platform !== 'darwin'}}",
       method: "fs.link",
       params: {
         venv: "app/env"
