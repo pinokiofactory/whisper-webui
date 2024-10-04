@@ -1,13 +1,14 @@
 module.exports = {
   run: [{
-    method: "fs.rm",
+    method: "shell.run",
     params: {
-      path: "app/configs/default_parameters.yaml"
+      message: "git pull"
     }
   }, {
     method: "shell.run",
     params: {
-      message: "git pull"
+      message: "git reset --hard HEAD",
+      path: "app"
     }
   }, {
     method: "shell.run",
