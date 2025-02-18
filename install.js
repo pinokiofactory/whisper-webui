@@ -24,6 +24,7 @@ module.exports = {
         venv: "env",
         path: "app",
         message: [
+          "numpy==1.26.4",
           "pip install -r requirements.txt"
         ]
       }
