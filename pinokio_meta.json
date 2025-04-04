@@ -4,5 +4,30 @@
     "https://x.com/cocktailpeanut/status/1750243475893662009",
     "https://x.com/cocktailpeanut/status/1748399381298991255",
     "https://x.com/Gradio/status/1750795744989393286"
-  ]
+  ],
+  "links": [{
+    "title": "6Morpheus6 (wrote the launcher)",
+    "links": [{
+      "type": "bitcoin",
+      "value": "1DdQdK4SfyJ7dZ64eiw2cPzsEigmbQ2CeW"
+    }, {
+      "title": "Github",
+      "value": "https://github.com/6Morpheus6"
+    }, {
+      "title": "Pinokio Wiki",
+      "value": "https://github.com/6Morpheus6/pinokio-wiki"
+    }, {
+      "title": "Discord",
+      "value": "https://discord.gg/TQdNwadtE4"
+    }]
+  }, {
+    "title" : "jhj0517 (wrote the app)",
+    "links" :[{
+      "title": "Github",
+      "value": "https://github.com/jhj0517"
+    }, {
+      "title": "Documentation",
+      "value": "https://gitlab.com/aadnk/whisper-webui/-/blob/main/docs/options.md"
+    }]
+  }]
 }
