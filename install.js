@@ -24,16 +24,9 @@ module.exports = {
         venv: "env",
         path: "app",
         message: [
-          "pip install numpy==1.26.4",
-          "pip install -r requirements.txt"
+          "uv pip install numpy==1.26.4",
+          "uv pip install -r requirements.txt"
         ]
-      }
-    },
-    {
-      when: "{{platform !== 'darwin'}}",
-      method: "fs.link",
-      params: {
-        venv: "app/env"
       }
     }
   ]
