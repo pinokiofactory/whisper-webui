@@ -17,7 +17,8 @@ module.exports = {
         venv: "env",
         path: "app",
         message: [
-          "uv pip install -r requirements.txt",
+          "uv pip install -r ../requirements.txt --build-constraints ../build-constraints.txt",
+          "uv pip install numpy==1.26.4",
         ]
       }
     },
