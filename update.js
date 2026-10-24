@@ -7,8 +7,11 @@ module.exports = {
   }, {
     method: "shell.run",
     params: {
-      message: "git reset --hard HEAD",
-      path: "app"
+      path: "app",
+      message: [
+        "git fetch",
+        "git reset --hard HEAD"
+      ]
     }
   }, {
     method: "shell.run",
