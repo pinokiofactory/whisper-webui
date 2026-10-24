@@ -5,7 +5,7 @@ module.exports = {
   description: "A Web UI for easy subtitle using whisper model.",
   icon: "icon.png",
   menu: async (kernel, info) => {
-    let installed = info.exists("app/env") || info.exists("app/venv")
+    let installed = info.exists("app/env")
     let running = {
       install: info.running("install.js"),
       start: info.running("start.js"),
