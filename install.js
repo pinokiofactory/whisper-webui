@@ -4,6 +4,14 @@ module.exports = {
   },
   run: [
     {
+      when: "{{exists('app/env')}}",
+      method: "fs.rm",
+      params: {
+        path: "app/env"
+      }
+    },
+    {
+      when: "{{!exists('app')}}",
       method: "shell.run",
       params: {
         message: [
@@ -14,11 +22,11 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        venv: "env",
+        venv_python: "3.11",
+        venv: "venv",
         path: "app",
         message: [
-          "uv pip install -r ../requirements.txt --build-constraints ../build-constraints.txt",
-          "uv pip install numpy==1.26.4",
+          "uv pip install -r ../requirements.txt --build-constraints ../build-constraints.txt"
         ]
       }
     },
@@ -27,7 +35,7 @@ module.exports = {
       params: {
         uri: "torch.js",
         params: {
-          venv: "env",
+          venv: "venv",
           path: "app",
         }
       }

@@ -7,7 +7,7 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        venv: "env",
+        venv: "venv",
         env: { },
         path: "app",
         message: [

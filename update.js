@@ -16,5 +16,11 @@ module.exports = {
       path: "app",
       message: "git pull"
     }
+  }, {
+    when: "{{exists('app/env')}}",
+    method: "fs.rm",
+    params: {
+      path: "app/env"
+    }
   }]
 }
